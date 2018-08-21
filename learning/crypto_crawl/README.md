@@ -1,4 +1,4 @@
-# Crypto crawler
+# Crypto Crawler
 ### Prerequisites
 Python 3.7, pandas, numpy, plotly, quandl
 
