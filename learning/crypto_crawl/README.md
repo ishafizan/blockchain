@@ -1,6 +1,7 @@
 # Crypto crawler
 ### Prerequisites
 Python 3.7, pandas, numpy, plotly, quandl
+
 [Quandl API key](https://docs.quandl.com/docs/getting-started)
 
 ```
