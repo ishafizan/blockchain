@@ -1,4 +1,4 @@
-# Hello world with web3.py
+# 'Hello world' with remix, web3.py, django REST api
 ### Prerequisites
 Python 3.7
 web3.py 4.6.0
