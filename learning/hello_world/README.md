@@ -21,9 +21,7 @@ https://remix.ethereum.org/
 register for free at https://infura.io
 ```
 cd deploy/
-```
-edit settings.py
-```
+vi settings.py
 python compile.py
 python interact.py
 ```
