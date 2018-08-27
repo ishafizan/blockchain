@@ -1,6 +1,7 @@
-# Hello world with web3.py
+# 'Hello world' with remix, web3.py, django REST api
 ### Prerequisites
 Python 3.7
+
 web3.py 4.6.0
 
 ### install web3.py
@@ -21,9 +22,7 @@ https://remix.ethereum.org/
 register for free at https://infura.io
 ```
 cd deploy/
-```
-edit settings.py
-```
+vi settings.py
 python compile.py
 python interact.py
 ```
@@ -34,7 +33,7 @@ TO DO
 ```
 
 ### Evaluating Ethereum Contracts
-# evaluate a local solidity contract
+evaluate a local solidity contract
 ```
 TO DO
 ```
