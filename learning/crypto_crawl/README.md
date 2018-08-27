@@ -10,7 +10,7 @@ pip3 install plotly
 pip3 install quandl
 ```
 
-![crypto performances](crawl/img/Screen Shot 2018-08-21 at 4.24.39 PM.png?raw=true "Title")
+![crypto performances](crawl/img/Screen%20Shot%202018-08-21%20at%204.24.39%20PM.png)
 ![Alt text](relative/path/to/img.jpg?raw=true "Title")
 ![Alt text](relative/path/to/img.jpg?raw=true "Title")
 
