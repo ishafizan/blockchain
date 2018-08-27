@@ -33,7 +33,7 @@ TO DO
 ```
 
 ### Evaluating Ethereum Contracts
-# evaluate a local solidity contract
+evaluate a local solidity contract
 ```
 TO DO
 ```
