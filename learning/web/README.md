@@ -25,6 +25,7 @@ django-admin startproject web
 - From the command line, cd into web/ directory
 - edit web/settings.py, web/urls.py
 - copy hello_world folder into django web project
+
 ![Alt text](static/Screen%20Shot%202018-08-28%20at%206.51.34%20PM.png)
 
 ### Start internal server
