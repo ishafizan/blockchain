@@ -93,7 +93,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '9t_hus0c^ag#&@l2p-ufwxc8f7+bqn)7)c@e)#n8z7r25@8@5!'
+SECRET_KEY = '123'
 
 """
 http://www.django-rest-framework.org/
