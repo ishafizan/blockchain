@@ -1,44 +1,46 @@
-# 'Hello world' with remix, web3.py, django REST api
+# 'Hello world' with django, web3.py
+
+Basically simple mods from https://github.com/ishafizan/blockchain/tree/master/learning/hello_world
+
 ### Prerequisites
 Python 3.7
-
+Django 2.1
 web3.py 4.6.0
 
-### install web3.py
 ```
 python3 -m venv project_name
 source project_name/bin/activate
 which python3
 which python
 pip3 install web3==4.6.0
+pip3 install -e django/
 ```
 
-### Solidity IDE: remix
-https://remix.ethereum.org/
-- copy Greeter.sol from contracts/
-- deploy to rinkeby network
+### Create django project
+- git clone the project into dir of choosing
+- From the command line, cd into a web/ directory
+```
+python manage.py runserver
+```
+### Browser
+set message
+```
+http://127.0.0.1:8000/hello_world/message/set/?message=hello
+```
+![Alt text](../static/img/Screen%20Shot%202018-08-27%20at%206.59.52%20PM.png)
 
-### Interface with web3.py
-register for free at https://infura.io
+get message
 ```
-cd deploy/
-vi settings.py
-python compile.py
-python interact.py
+http://127.0.0.1:8000/hello_world/message/get/
 ```
-![Alt text](img/Screen%20Shot%202018-08-27%20at%206.59.52%20PM.png)
-![Alt text](img/Screen%20Shot%202018-08-27%20at%206.59.35%20PM.png)
+![Alt text](../static/img/Screen%20Shot%202018-08-27%20at%206.59.35%20PM.png)
 
-### Django simple html, REST api
+- tester
 ```
-TO DO
+http://127.0.0.1:8000/hello_world/test/
 ```
+![Alt text](../static/img/Screen%20Shot%202018-08-27%20at%206.59.35%20PM.png)
 
-### Evaluating Ethereum Contracts
-evaluate a local solidity contract
-```
-TO DO
-```
 
 ## Author
 * **Ishafizan Ishak**
