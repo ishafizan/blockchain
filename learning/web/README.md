@@ -27,12 +27,12 @@ set message
 ```
 http://127.0.0.1:8000/hello_world/message/set/?message=hello
 ```
-![Alt text](../static/Screen%20Shot%202018-08-28%20at%206.00.45%20PM.png)
+![Alt text](static/Screen%20Shot%202018-08-28%20at%206.00.45%20PM.png)
 get message
 ```
 http://127.0.0.1:8000/hello_world/message/get/
 ```
-![Alt text](../static/Screen%20Shot%202018-08-28%20at%206.00.36%20PM.png)
+![Alt text](static/Screen%20Shot%202018-08-28%20at%206.00.36%20PM.png)
 
 - tester
 ```
