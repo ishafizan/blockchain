@@ -9,7 +9,7 @@ import util_gen
 __author__ = 'Ishafizan'
 
 # ---------------------------
-# compile *.sol via WEB3.py
+# compile *.sol
 # ---------------------------
 log = util_log.logger()
 start = time()

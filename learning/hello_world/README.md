@@ -1,4 +1,4 @@
-# 'Hello world' with remix, web3.py, django REST api
+# 'Hello world' with remix, web3.py
 ### Prerequisites
 Python 3.7
 
@@ -26,17 +26,9 @@ vi settings.py
 python compile.py
 python interact.py
 ```
+![Alt text](img/Screen%20Shot%202018-08-27%20at%206.59.52%20PM.png)
+![Alt text](img/Screen%20Shot%202018-08-27%20at%206.59.35%20PM.png)
 
-### Django simple html, REST api
-```
-TO DO
-```
-
-### Evaluating Ethereum Contracts
-evaluate a local solidity contract
-```
-TO DO
-```
 
 ## Author
 * **Ishafizan Ishak**
