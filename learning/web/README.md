@@ -17,7 +17,7 @@ pip3 install -e django/
 ```
 
 ### Create django project
-- git clone the project into dir of choosing
+- git clone the project into dir of choosing (within venv)
 - From the command line, cd into web/ directory
 ```
 python manage.py runserver
