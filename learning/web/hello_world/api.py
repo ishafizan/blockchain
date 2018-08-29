@@ -1,12 +1,19 @@
 # -*- coding: utf-8 -*-
 from . import settings
 from . import util_web3
-from json import dumps
+from json import dumps, loads
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.core.serializers.json import DjangoJSONEncoder
 from web3 import Web3, HTTPProvider
 from web3.middleware import geth_poa_middleware
+
+"""
+get_transaction_status 
+get_transaction_data eg: 0xa1c4e4361b7d618fdca6b4b3c6005531ef272544e56ba0bd6ceee73e97cd4d5b 
+blockNumber: 2896459
+TxReceipt Status:
+"""
 
 
 # set message
@@ -88,12 +95,14 @@ def set_message(request):
 
         # Wait for transaction to be mined...
         tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash)
+        print(tx_receipt)
     except Exception as err:
         status_code = 418
         message = err.args[1]
 
     # return response
-    outdata.update({"status": status_code, "data": {"text": message, "tx": toJSON(tx_receipt)}})
+    # outdata.update({"status": status_code, "data": {"text": message, "tx": toJSON(tx_receipt)}})
+    outdata.update({"status": status_code, "data": {"text": message, "tx": {"blockNumber": tx_receipt.blockNumber}}})
 
     if request.method == 'POST':
         callback = request.GET.get('callback')
@@ -109,6 +118,49 @@ def set_message(request):
     return response
 
 
+# Looking up transactions
+# class to json
+def tx_look(request):
+    data = {}
+    outdata = {}
+    status_code = 200
+    tx_receipt = False
+
+    if request.method == 'POST':
+        txid = request.POST.get("txid")
+    else:
+        # modify to your own liking. Currently allowing for GET requests
+        # message = "Method Not Allowed"
+        status_code = 405
+        txid = request.GET.get("txid")
+
+    # look up transactions
+    # get web3.py instance
+    w3 = Web3(HTTPProvider(settings.__infura_rinkeby__))
+    w3.middleware_stack.inject(geth_poa_middleware, layer=0)
+
+    # txid = "0xa1c4e4361b7d618fdca6b4b3c6005531ef272544e56ba0bd6ceee73e97cd4d5b"
+    data = w3.eth.getTransaction(txid)
+    data = util_web3.get_dict(data)
+
+    # return response
+    outdata.update({"status": status_code, "data": {"blockNumber": data["blockNumber"]}})
+
+    if request.method == 'POST':
+        callback = request.GET.get('callback')
+    else:
+        callback = ""
+    if callback != "" and callback:
+        data = '%s(%s);' % (callback, dumps(outdata, indent=4))
+        response = HttpResponse(data, content_type="application/json")
+    else:
+        response = HttpResponse(
+            content=dumps(outdata, cls=DjangoJSONEncoder, indent=4), content_type="application/json"
+        )
+    return response
+
+
+# -----------------------------------------------------------------------------
 # class to json
 def toJSON(myobj):
     return dumps(myobj, default=lambda o: o.__dict__,

@@ -9,6 +9,13 @@ from . import settings
 __author__ = 'Ishafizan'
 
 
+# get dict from attributeDict
+def get_dict(myclassdict):
+    data = {key: value for key, value in myclassdict.__dict__.items() if
+            not key.startswith('__') and not callable(key)}
+    return data
+
+
 def addr_checksum(log, addr, w3):
     addr = w3.toChecksumAddress(addr)
     # log.info(addr)
