@@ -18,6 +18,7 @@ https://metamask.io/
 ### Get free test eth
 - http://rinkeby-faucet.com/
 - https://www.rinkeby.io/#faucet
+![Alt text](img/Screen%20Shot%202018-08-29%20at%203.38.11%20PM.png)
 
 ### Solidity IDE: remix
 https://remix.ethereum.org/
