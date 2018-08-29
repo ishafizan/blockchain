@@ -1,6 +1,7 @@
 # 'Hello world' with django, web3.py
 
-Basically simple mods from https://github.com/ishafizan/blockchain/tree/master/learning/hello_world
+Simple mods from https://github.com/ishafizan/blockchain/tree/master/learning/hello_world
+Set/Get methods via REST with Django
 
 ### Prerequisites
 Linux or Mac is recommended, and you need Python 3.6+. If you are using Windows, either setup a VM or use the Linux Subsystem
