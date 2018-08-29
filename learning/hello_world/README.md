@@ -12,6 +12,11 @@ which python3
 which python
 pip3 install web3==4.6.0
 ```
+### Install metamask chrome extension
+https://metamask.io/
+#### get free eth
+http://rinkeby-faucet.com/
+https://www.rinkeby.io/#faucet
 
 ### Solidity IDE: remix
 https://remix.ethereum.org/
