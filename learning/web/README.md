@@ -4,7 +4,7 @@ Simple mods from https://github.com/ishafizan/blockchain/tree/master/learning/he
 Set/Get methods via REST with Django
 
 ### Prerequisites
-Linux or Mac is recommended, and you need Python 3.6+. If you are using Windows, either setup a VM or use the Linux Subsystem
+- Linux or Mac is recommended, and you need Python 3.6+. If you are using Windows, either setup a VM or use the Linux Subsystem
 
 Python 3.7
 Django 2.1
@@ -18,6 +18,7 @@ which python
 pip3 install web3==4.6.0
 pip3 install -e django/
 ```
+- contract has been deployed to rinkeby & address available
 
 ### Create django project
 - git clone the project into dir of choosing 
@@ -26,8 +27,9 @@ pip3 install -e django/
 django-admin startproject web
 ```
 - From the command line, cd into web/ directory
-- edit web/settings.py, web/urls.py
+- edit web/urls.py
 - copy hello_world folder into django web project
+- edit web/hello_world/settings.py & edit necessary info (eg: contract location/addr)
 
 ![Alt text](static/Screen%20Shot%202018-08-28%20at%206.51.34%20PM.png)
 
