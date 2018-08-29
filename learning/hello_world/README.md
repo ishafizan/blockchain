@@ -36,7 +36,8 @@ edit settings.py and anter the necessary info
 cd deploy/
 vi settings.py
 python compile.py
-python interact.py
+python message_set.py
+python message_get.py
 ```
 ![Alt text](img/Screen%20Shot%202018-08-27%20at%206.59.52%20PM.png)
 ![Alt text](img/Screen%20Shot%202018-08-27%20at%206.59.35%20PM.png)
