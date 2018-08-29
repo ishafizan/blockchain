@@ -71,8 +71,8 @@ python tx_lookup.py
 ![Alt text](img/Screen%20Shot%202018-08-29%20at%208.31.51%20PM.png)
 
 - edit settings.py accordingly
-- re-execute message_set.py, message_get.py etc as before
 ![Alt text](img/Screen%20Shot%202018-08-29%20at%208.28.46%20PM.png)
+- re-execute message_set.py, message_get.py etc as before
 
 ### References
 - https://web3py.readthedocs.io/en/stable/web3.eth.html
