@@ -1,8 +1,8 @@
 # 'Hello world' with remix, web3.py
 ### Prerequisites
-Python 3.7
+Linux or Mac is recommended, and you need Python 3.6+. If you are using Windows, either setup a VM or use the Linux Subsystem
 
-web3.py 4.6.0
+Python 3.7, web3.py 4.6.0
 
 ### install web3.py
 ```
