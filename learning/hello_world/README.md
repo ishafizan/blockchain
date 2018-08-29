@@ -4,7 +4,7 @@ Linux or Mac is recommended, and you need Python 3.6+. If you are using Windows,
 
 Python 3.7, web3.py 4.6.0
 
-### install web3.py
+### Install web3.py
 ```
 python3 -m venv project_name
 source project_name/bin/activate
