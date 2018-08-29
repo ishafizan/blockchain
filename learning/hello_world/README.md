@@ -26,22 +26,29 @@ https://remix.ethereum.org/
 - deploy to rinkeby network
 
 ### Interface with web3.py
-register for free at https://infura.io
-
-remember to select the rinkeby to copy the url endpoint
+- register for free at https://infura.io
+- remember to select the rinkeby to copy the url endpoint
 ![Alt text](img/Screen%20Shot%202018-08-29%20at%203.29.02%20PM.png)
 
-edit settings.py and anter the necessary info
+- edit settings.py and anter the necessary info
+- compiling.py: looks for contract sol file to compile. A json file will be createdundern /contract
+- deploy easily via remix to rinkeby network
 ```
 cd deploy/
 vi settings.py
 python compile.py
+```
+- message_set.py: set message (eg: "hello world") to contract
+- message_get.py: get current message in contract
+- tx_lookup.py: get transaction details 
+```
 python message_set.py
 python message_get.py
+python tx_lookup.py
 ```
 ![Alt text](img/Screen%20Shot%202018-08-27%20at%206.59.52%20PM.png)
 ![Alt text](img/Screen%20Shot%202018-08-27%20at%206.59.35%20PM.png)
-
+![Alt text](img/Screen%20Shot%202018-08-29%20at%204.29.37%20PM.png)
 
 ## Author
 * **Ishafizan Ishak**
