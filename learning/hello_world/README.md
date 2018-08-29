@@ -55,6 +55,10 @@ python tx_lookup.py
 ![Alt text](img/Screen%20Shot%202018-08-27%20at%206.59.35%20PM.png)
 ![Alt text](img/Screen%20Shot%202018-08-29%20at%204.29.37%20PM.png)
 
+### references
+https://web3py.readthedocs.io/en/stable/web3.eth.html
+https://web3py.readthedocs.io/en/stable/overview.html#overview-type-conversions
+
 ## Author
 * **Ishafizan Ishak**
 
