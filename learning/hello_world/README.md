@@ -20,6 +20,10 @@ https://remix.ethereum.org/
 
 ### Interface with web3.py
 register for free at https://infura.io
+remember to select the rinkeby endpoint
+![Alt text](img/Screen%20Shot%202018-08-29%20at%203.29.02%20PM.png)
+
+edit settings.py and anter the necessary info
 ```
 cd deploy/
 vi settings.py
