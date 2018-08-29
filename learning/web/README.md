@@ -1,4 +1,4 @@
-# 'Hello world' with django, web3.py
+# 'Hello world' with django, web3.py, infura.io, rinkeby
 
 Simple mods from https://github.com/ishafizan/blockchain/tree/master/learning/hello_world
 Set/Get methods via REST with Django
