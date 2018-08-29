@@ -97,7 +97,7 @@ def set_message(request):
         # Wait for transaction to be mined...
         tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash)
         print(tx_receipt)
-        transactionhash = "0x" + str(binascii.b2a_hex(tx_receipt.transactionHash))
+        transactionhash = tx_receipt.transactionHash.hex()
         etherscan_tx = "https://rinkeby.etherscan.io/tx/%s," % transactionhash
         etherscan_block = "https://rinkeby.etherscan.io/block/%s," % tx_receipt.blockNumber
 
