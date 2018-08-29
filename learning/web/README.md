@@ -40,7 +40,7 @@ python manage.py runserver
 ### Browser
 - set message
 ```
-http://127.0.0.1:8000/hello_world/message/set/?message=hello
+http://127.0.0.1:8000/hello_world/message/set/?message=hello world !!!
 ```
 ![Alt text](static/Screen%20Shot%202018-08-29%20at%204.50.35%20PM.png)
 
