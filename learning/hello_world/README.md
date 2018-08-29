@@ -22,7 +22,8 @@ https://metamask.io/
 
 ### Solidity IDE: remix
 https://remix.ethereum.org/
-- copy Greeter.sol from contracts/
+- copy Greeter.sol from contracts/ to remix
+- monkey around with the interface
 - deploy to rinkeby network
 
 ### Interface with web3.py
