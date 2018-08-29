@@ -65,6 +65,7 @@ python tx_lookup.py
 
 ### Extra: deploying to Kovan (parity)
 - From Metamask, select 'Kovan Test Network'
+- optional: get KETH from https://faucet.kovan.network/
 - open remix, and deploy contract
 - edit settings.py accordingly
 - re-execute message_set.py, message_get.py etc as before
