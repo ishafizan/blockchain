@@ -72,7 +72,9 @@ python tx_lookup.py
 
 - edit settings.py accordingly
 ![Alt text](img/Screen%20Shot%202018-08-29%20at%208.28.46%20PM.png)
-- re-execute message_set.py, message_get.py etc as before
+- change reference to infura (1 line of code) in message_set.py, message_get.py etc. re-execute. 
+Note: opportunity for code re-use -> that's your homework :)
+![Alt text](img/Screen%20Shot%202018-08-29%20at%208.45.49%20PM.png)
 
 ### References
 - https://web3py.readthedocs.io/en/stable/web3.eth.html
