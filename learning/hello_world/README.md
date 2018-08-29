@@ -31,8 +31,8 @@ https://remix.ethereum.org/
 ![Alt text](img/Screen%20Shot%202018-08-29%20at%203.29.02%20PM.png)
 
 - edit settings.py and anter the necessary info
-- compiling.py: looks for contract sol file to compile. A json file will be createdundern /contract
-- deploy easily via remix to rinkeby network
+- compiling.py: looks for contract sol file to compile in contract/ folder. A json file will be created under /contract
+- note: easy deploy contract via remix
 ```
 cd deploy/
 vi settings.py
