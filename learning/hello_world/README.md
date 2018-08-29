@@ -28,17 +28,15 @@ https://remix.ethereum.org/
 - note: easy deploy contract via remix
 ![Alt text](img/Screen%20Shot%202018-08-29%20at%205.07.10%20PM.png)
 
-### Interface with contract via web3.py
+### Compiling & deploying the contract via web3.py
 - register for free at https://infura.io
 - remember to select the rinkeby to copy the url endpoint
 ![Alt text](img/Screen%20Shot%202018-08-29%20at%203.29.02%20PM.png)
 
-- edit settings.py and enter the necessary info
 - compiling.py: looks for contract sol file to compile in contract/ folder. A json file will be created under /contract
 - note: cache mechanism in place as not to re-compile 
 ```
 cd deploy/
-vi settings.py
 python compile.py
 ```
 ![Alt text](img/Screen%20Shot%202018-08-29%20at%205.01.20%20PM.png)
@@ -48,6 +46,9 @@ python compile.py
 ```
 python deploy.py
 ```
+
+### Interfacing with the contract via web3.py
+- take note of the contract address & edit settings.py
 ![Alt text](img/Screen%20Shot%202018-08-29%20at%205.40.25%20PM.png)
 
 - message_set.py: set message (eg: "hello world") to contract instance
