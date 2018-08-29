@@ -7,6 +7,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.core.serializers.json import DjangoJSONEncoder
 from web3 import Web3, HTTPProvider
 from web3.middleware import geth_poa_middleware
+import binascii
 
 """
 get_transaction_status 
@@ -96,13 +97,19 @@ def set_message(request):
         # Wait for transaction to be mined...
         tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash)
         print(tx_receipt)
+        transactionhash = "0x" + str(binascii.b2a_hex(tx_receipt.transactionHash))
+        etherscan_tx = "https://rinkeby.etherscan.io/tx/%s," % transactionhash
+        etherscan_block = "https://rinkeby.etherscan.io/block/%s," % tx_receipt.blockNumber
+
     except Exception as err:
         status_code = 418
         message = err.args[1]
 
     # return response
     # outdata.update({"status": status_code, "data": {"text": message, "tx": toJSON(tx_receipt)}})
-    outdata.update({"status": status_code, "data": {"text": message, "tx": {"blockNumber": tx_receipt.blockNumber}}})
+    outdata.update({"status": status_code,
+                    "data": {"text": message, "tx": {"url": {"block": etherscan_block, "tx": etherscan_tx},
+                                                     "transactionHash": transactionhash}}})
 
     if request.method == 'POST':
         callback = request.GET.get('callback')
