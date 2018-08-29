@@ -3,6 +3,8 @@
 Basically simple mods from https://github.com/ishafizan/blockchain/tree/master/learning/hello_world
 
 ### Prerequisites
+Linux or Mac is recommended, and you need Python 3.6+. If you are using Windows, either setup a VM or use the Linux Subsystem
+
 Python 3.7
 Django 2.1
 web3.py 4.6.0
