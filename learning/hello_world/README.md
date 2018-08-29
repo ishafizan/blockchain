@@ -63,6 +63,15 @@ python tx_lookup.py
 ![Alt text](img/Screen%20Shot%202018-08-27%20at%206.59.35%20PM.png)
 ![Alt text](img/Screen%20Shot%202018-08-29%20at%204.29.37%20PM.png)
 
+### Extra: deploying to Kovan (parity)
+- From Metamask, select 'Kovan Test Network'
+- open remix, and deploy contract
+- edit settings.py accordingly
+- re-execute message_set.py, message_get.py etc as before
+![Alt text](img/Screen%20Shot%202018-08-29%20at%208.32.24%20PM.png)
+![Alt text](img/Screen%20Shot%202018-08-29%20at%208.31.51%20PM.png)
+![Alt text](img/Screen%20Shot%202018-08-29%20at%208.28.46%20PM.png)
+
 ### References
 - https://web3py.readthedocs.io/en/stable/web3.eth.html
 - https://web3py.readthedocs.io/en/stable/overview.html#overview-type-conversions
