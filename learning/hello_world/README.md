@@ -43,6 +43,13 @@ python compile.py
 ```
 ![Alt text](img/Screen%20Shot%202018-08-29%20at%205.01.20%20PM.png)
 
+- run deploy.py to deploy the contract to network.
+- Note: remix much easier
+```
+python deploy.py
+```
+![Alt text](img/Screen%20Shot%202018-08-29%20at%205.40.25%20PM.png)
+
 - message_set.py: set message (eg: "hello world") to contract instance
 - message_get.py: get current message in contract
 - tx_lookup.py: get transaction details 
