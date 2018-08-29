@@ -26,6 +26,7 @@ https://remix.ethereum.org/
 - copy Greeter.sol from contracts/ to remix
 - monkey around with the interface
 - note: easy deploy contract via remix
+![Alt text](img/Screen%20Shot%202018-08-29%20at%205.07.10%20PM.png)
 
 ### Interface with contract via web3.py
 - register for free at https://infura.io
