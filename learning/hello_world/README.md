@@ -22,6 +22,7 @@ https://metamask.io/
 ![Alt text](img/Screen%20Shot%202018-08-29%20at%203.38.11%20PM.png)
 
 ### Solidity IDE: remix
+Remix is currently the most optimal way of trying out Solidity
 https://remix.ethereum.org/
 - copy Greeter.sol from contracts/ to remix
 - monkey around with the interface
