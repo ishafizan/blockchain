@@ -61,6 +61,7 @@ try:
     # Wait for the transaction to be mined, and get the transaction receipt
     tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash)
     log.info(tx_receipt)
+    log.info("contract_address: %s" % tx_receipt.contractAddress)
 
 
 except Exception as err:
