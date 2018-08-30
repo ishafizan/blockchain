@@ -25,7 +25,7 @@ def get_compiled_contract(log, my_path, filename, sol_file):
         with open("%s%s" % (my_path, sol_file)) as src_file:
             code = src_file.read()
             compiled_sol = compile_source(code)  # Compiled source code
-            contract_interface = compiled_sol['<stdin>:Greeter']
+            contract_interface = compiled_sol['<stdin>:%s' % sol_file.replace(".sol", "")]
         with open("%s%s" % (my_path, filename), 'w') as outfile:
             json.dump(contract_interface, outfile)
         log.info('Cached {} at {}'.format(filename, my_path))
